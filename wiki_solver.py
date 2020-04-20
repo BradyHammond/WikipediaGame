@@ -16,11 +16,11 @@ import wikipedia
 
 
 class WikiSolver:
-    def __init__(self, start, stop, verbosity, pattern):
+    def __init__(self, start, stop, verbose=False, single=False):
         self.start = start
         self.stop = stop
-        self.verbosity = verbosity
-        self.pattern = pattern
+        self.verbosity = verbose
+        self.single = single
 
 # ================================================== #
 #                        EOF                         #

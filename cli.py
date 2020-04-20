@@ -12,7 +12,7 @@ import click
 import version
 
 # ================================================== #
-#                        MAIN                        #
+#                     FUNCTIONS                      #
 # ================================================== #
 
 
@@ -23,9 +23,10 @@ import version
                                                                   " breadth first search from start and end pages "
                                                                   "simultaneously.")
 @click.argument('pages', type=str, nargs=2)
-def main(verbose, single, pages):
+def main(verbose, single_ended, pages):
     """Command line interface for Wiki Game as defined here: https://en.wikipedia.org/wiki/Wikipedia:Wiki_Game."""
-    pass
+    print(pages[0])
+    print(pages[1])
 
 # ================================================== #
 #                        EOF                         #
