@@ -1,5 +1,5 @@
 # ================================================== #
-#                  WIKIPEDIA GAME                    #
+#                     WIKI SOLVER                    #
 # ================================================== #
 # Author: Brady Hammond                              #
 # Created: 04/20/2020                                #
@@ -8,11 +8,19 @@
 #                      IMPORTS                       #
 # ================================================== #
 
-from wiki_solver import WikiSolver
+import wikipedia
 
 # ================================================== #
-#                        MAIN                        #
+#                      CLASSES                       #
 # ================================================== #
+
+
+class WikiSolver:
+    def __init__(self, start, stop, verbosity, pattern):
+        self.start = start
+        self.stop = stop
+        self.verbosity = verbosity
+        self.pattern = pattern
 
 # ================================================== #
 #                        EOF                         #

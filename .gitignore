@@ -97,3 +97,4 @@ ENV/
 env.bak/
 venv.bak/
 pip-selfcheck.json
+WikipediaGame.egg-info
