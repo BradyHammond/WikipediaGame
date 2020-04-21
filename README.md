@@ -7,7 +7,7 @@ the game is to try and find a connection between two Wikipedia pages in as littl
 ### Installation
 To install this project first checkout the git repository:
 ```
-$ git clone https://github.com/BradyHammond/wikipedia_game.git
+$ git clone https://github.com/BradyHammond/WikipediaGame.git
 ```
 This project requires Python3. If needed you can download that [here](https://www.python.org/downloads/). It is 
 recommended that you run this project in a virtual environment. To setup a Python virtual environment you will need to 
