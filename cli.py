@@ -23,7 +23,7 @@ from wikipedia_game import main_click
 @click.option('--single-ended/--double-ended', default=True, help="Run breadth first search from start page only or run"
                                                                   " breadth first search from start and end pages "
                                                                   "simultaneously.")
-@click.option('--timeout', '-t', default=60, type=int, help="Override default timeout duration. Use -1 for no timeout")
+@click.option('--timeout', '-t', default=60, type=int, help="Override default timeout duration. Use -1 for no timeout.")
 @click.argument('pages', type=str, nargs=2)
 def main(verbose, single_ended, timeout, pages):
     """
