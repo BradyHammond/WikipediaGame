@@ -23,7 +23,7 @@ setup(
     author='Brady Hammond',
     author_email='bradymh23@gmail.com',
     url='https://github.com/BradyHammond/wikipedia_game',
-    py_modules=['wikipedia_game'],
+    packages=[''],
     classifiers=[
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
