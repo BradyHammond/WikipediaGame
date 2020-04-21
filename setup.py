@@ -36,7 +36,7 @@ setup(
         'Topic :: Games/Entertainment',
     ],
     install_requires=['beautifulsoup4>=4.9.0', 'certifi>=2020.4.5.1', 'chardet>=3.0.4', 'click>=7.1.1', 'idna>=2.9',
-                      'requests>=2.23.0', 'soupsieve>=2.0', 'urllib3>=1.25.9', 'wikipedia>=1.4.0'],
+                      'requests>=2.23.0', 'soupsieve>=2.0', 'urllib3>=1.25.9'],
     entry_points={
         'console_scripts': ['wiki = cli:main'],
     }

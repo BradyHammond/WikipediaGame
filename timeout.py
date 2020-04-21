@@ -16,7 +16,7 @@ import signal
 
 
 class timeout:
-    def __init__(self, seconds=10, error_message='function exceeded timeout limit'):
+    def __init__(self, seconds=10, error_message='search exceeded timeout limit'):
         self.seconds = seconds
         self.error_message = error_message
 

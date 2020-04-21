@@ -10,7 +10,7 @@
 
 import click
 import version
-from wikipedia_game import mainClick
+from wikipedia_game import main_click
 
 # ================================================== #
 #                     FUNCTIONS                      #
@@ -23,11 +23,11 @@ from wikipedia_game import mainClick
 @click.option('--single-ended/--double-ended', default=True, help="Run breadth first search from start page only or run"
                                                                   " breadth first search from start and end pages "
                                                                   "simultaneously.")
-@click.option('--timeout', '-t', default=60, type=int, help="Override default timeout duration.")
+@click.option('--timeout', '-t', default=60, type=int, help="Override default timeout duration. Use -1 for no timeout")
 @click.argument('pages', type=str, nargs=2)
 def main(verbose, single_ended, timeout, pages):
     """Command line interface for Wiki Game as defined here: https://en.wikipedia.org/wiki/Wikipedia:Wiki_Game."""
-    mainClick(verbose, single_ended, timeout, pages)
+    main_click(verbose, single_ended, timeout, pages)
 
 # ================================================== #
 #                        EOF                         #
