@@ -16,7 +16,7 @@ from setuptools import setup
 
 exec(open('version.py').read())
 setup(
-    name='WikipediaGame',
+    name='wikipedia_game',
     version=__version__,
     license='GPLv3',
     description='Implementation of Wiki Game as outlined here: https://en.wikipedia.org/wiki/Wikipedia:Wiki_Game',
