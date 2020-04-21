@@ -82,10 +82,10 @@ class WikiSolver:
         with timeout(seconds=self.timeout_limit):
             self.verify_ends()
             if self.single:
-                logging.info("Starting unidirectional BFS")
+                print("Starting unidirectional BFS")
                 self.single_ended_search()
             else:
-                logging.info("Starting bidirectional BFS")
+                print("Starting bidirectional BFS")
                 self.double_ended_search()
 
     def single_ended_search(self):
@@ -218,7 +218,7 @@ class WikiSolver:
             else:
                 result.appendleft(node.url.split("/")[-1])
             node = node.parent
-        print(" -> ".join(result))
+        print(" -> ".join(result).replace("_", " "))
         print("Elapsed Search Time: " + str(round(time.time() - self.start_time, 2)) + "s")
 
 # ================================================== #
