@@ -26,7 +26,13 @@ from wikipedia_game import main_click
 @click.option('--timeout', '-t', default=60, type=int, help="Override default timeout duration. Use -1 for no timeout")
 @click.argument('pages', type=str, nargs=2)
 def main(verbose, single_ended, timeout, pages):
-    """Command line interface for Wiki Game as defined here: https://en.wikipedia.org/wiki/Wikipedia:Wiki_Game."""
+    """
+    Command line interface for Wiki Game as defined here: https://en.wikipedia.org/wiki/Wikipedia:Wiki_Game.
+    :param verbose: verbose logging flag
+    :param single_ended: single ended BFS or double ended BFS flag
+    :param timeout: timeout time in seconds
+    :param pages: start and stop pages'
+    """
     main_click(verbose, single_ended, timeout, pages)
 
 # ================================================== #
